@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ 
+.display-4 {
+  font-size: 2.5rem;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+  input[type=email] {
+ width: 277px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  
+}
+input[type=email]:focus {
+  width: 100%;
+}
+
+ textarea {
+  width: 277px;
+  height: 70px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 135px;
+  width: 180px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+ 
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:5px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.b{
+  border-radius: 5%;
+   opacity: 1;
+  display: block;
+  width: 100%;
+  height:80%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.b:hover{
+  opacity: 0.3;
+}
+#c:hover {
+  text-decoration:none;
+  background-color: #ddd;
+  color: black;
+}
+
+
+  </style>
+</head>
+  <body>
+ 
+  <!-- navbar -->
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Brand -->
+<a class="navbar-brand"><img src="img/logo.png"></a>
+
+<!-- Links -->
+<div class="collapse navbar-collapse justify-content-end" id="nav-content">     
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="health.html">Mental Health</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="care.html">Preventive Care</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Conatct Us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="quiz.html">Quiz</a>
+</li>
+<li class="nav-tem">
+<a class="nav-link" href="dashboard.php">Dashboard</a>
+</li>
+</ul>
+</nav>
+<div class="container">
+<h4><i><p class="font-weight-light" style="text-align: center">Here are some common mental illness's through which most of the people deal with!!!</p></i></h4>
+	
+	<div class="card" style="width: 100%;">
+
+		<div class="card-body"  style="background-color:#F0FFFF;" >
+     <div>
+      <nav class="nav d-flex justify-content-between">
+      		<a class="p-2 text-muted" id="c" href="care.html">Anxiety</a>
+              <a class="p-2 text-muted" id="c" href="c1.html">Depression</a>
+              <a  class="p-2 text-muted" id= "c" href="c2.html">OCD</a>
+              <a  class="p-2 text-muted" id="c" href="c3.html">Eating disorder</a>
+              <a class="p-2 text-muted" id="c" href="c4.html">PTSD</a>
+              <a class="p-2 text-muted" id="c" href="c5.html">Addiction</a>
+              <a class="p-2 text-muted" id="c" href="c6.html">Relationships</a>
+              </nav>
+      </div>
+      <hr>
+      	<div class="row container">
+       <div class="col-sm-4 bg-light;  style=" margin-top:15px; margin-bottom:45px;"">
+       	<p class="card-text">
+      <h3 class="card-subtitle mb-2 text-muted font-weight:bold">Relationships</h3>
+  <p>Anxiety is among the common mental health disorders experienced in relationships. While some are anxious because of unknown expectations in the relationship, the other fraction is afraid that their partner will cheat. Regardless of the cause, there is no reason to feel anxious without solid reasons. So instead of panicking, use this opportunity to explore and manage various factors that cause anxiety in your relationship.  Even though everyone expects the best from their relationships, some can go wrong, affecting your self-esteem and mental health in general.</p>
+<h3  class="card-subtitle mb-2 text-muted font-weight:bold">Prevention</h3>
+<p>Relationships with friends, partner or family can be affected if you dont take the following precautions:</p>
+<p>
+<ul>
+<li>Understand each other’s feelings, needs, and expectations</li>
+<li>Manage Your Anxiety</li>
+<li>Maintain Your Identity</li>
+<li>Accept that You Cannot Control Everything</li>
+<li>Try being mindful</li>
+<li>Don’t Act on Your Feelings</li>
+<ul>
+</p>
+  </div>
+ 
+  <div class="col-sm-1"></div>
+
+  <div class="col-sm-7 style=" margin-top:15px; margin-bottom:45px;"">
+<img src="img/s9.jpeg" class="b">
+		
+   <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action='chat.php' method='POST' class="form-container">
+    <h5 class="font-weight-bold" style="color:teal;"><i>Disscuss your issues, queries and feel free to ask for help!! Chat With Us Now!!</i></h5>
+<hr/>
+ <label>Email</label> 
+       <input type="email" name="email" placeholder="Email"><br>
+    <label>Message</label>
+    <textarea placeholder="Type message.." name="msg"></textarea>
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</div>
+</div>
+
+        </center>
+        </div>
+
+        </div>
+      </div>
+</div>
+</div>
+</div>
+
+    </div>
+
+<br>
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

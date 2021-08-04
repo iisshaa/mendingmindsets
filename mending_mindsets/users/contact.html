@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+  input[type=text] {
+  width: 300px
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+    textarea {
+  width: 400px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  transition: width 0.4s ease-in-out;
+}
+
+textarea:focus {
+  width: 100%;
+}
+    </style>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+ </head>
+  <body>
+ 
+  <!-- navbar -->
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Brand -->
+<a class="navbar-brand"><img src="img/logo.png"></a>
+
+<!-- Links -->
+<div class="collapse navbar-collapse justify-content-end" id="nav-content">     
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="health.html">Mental Health</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="care.html">Preventive Care</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Conatct Us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="quiz.html">Quiz</a>
+</li>
+<li>
+<a class="nav-link" href="dashboard.php">Dashboard</a>
+</li>
+</ul>
+</nav>
+<div class="container">
+	<h4><i><p class="font-weight-light" style="text-align: center">Looking for a non-judgemental platform to resolve your mental issues? Here we are! Have any queries at all? Get in touch with us today.</p></i></h4>
+</div>
+<div class="container">
+<div class="container" style="background-color: #eec0c6;
+background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%)";>
+
+	<div class="row container">
+		
+		<div class="col-sm-4" style="background-color: white; margin-top:15px; margin-bottom:120px">
+
+			<p><h5 >phone</h5>
+			<br>
+			(541) 344-1564</p>
+			<p><h5 >Address</h5>
+			 D-404 Evershine View,<br>Mumbai-44</p>
+			<p><h5 >Email Address</h5>
+			<a href="mailto:mendingmindsets@gmail.com">mendingmindsets@gmail.com</a></p>
+		
+
+		</div>
+		<div class="col-sm-1">
+		</div>
+		<div class="col-sm-7" style=" margin-top:15px; margin-bottom:45px">
+    <center>
+			<form action='chat.php' method='POST'>
+       <label>Email</label> <br><br>
+       <input type="text" name="email"><br><br>
+       <label>Suggestions</label> <br><br>
+      <textarea name="msg"></textarea><br><br>
+				<div>
+			 	<button class="btn btn-primary">Submit</button><br><br>
+       </form>
+</div>
+  </center>
+</div>
+</div>
+</div>
+
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
